@@ -15,3 +15,9 @@ python3 -m http.server 8000 --directory dist
 ```
 
 Abra http://localhost:8000. Para hospedar, use `dist/` como diretório público; não há etapa de build.
+
+## Deploy na Vercel
+
+O arquivo `vercel.json` configura a publicação estática da pasta `dist/`, sem instalação de dependências ou etapa de build.
+
+Importe o repositório mantendo **Root Directory** na raiz do repositório (vazio ou `.`). A configuração versionada define **Framework Preset: Other**, **Output Directory: dist** e os comandos vazios. Alterações na branch de produção geram um novo deploy quando a integração Git está ativa.
