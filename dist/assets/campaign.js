@@ -60,7 +60,10 @@
 
   const bar = document.querySelector('.action-bar');
   function syncBarHeight() {
-    if (bar) document.documentElement.style.setProperty('--bar-height', Math.ceil(bar.getBoundingClientRect().height) + 'px');
+    if (!bar) return;
+    const height = Math.ceil(bar.getBoundingClientRect().height) + 'px';
+    document.documentElement.style.setProperty('--bar-height', height);
+    document.documentElement.style.setProperty('--bottom-bar-h', height);
   }
   if (bar && typeof ResizeObserver === 'function') new ResizeObserver(syncBarHeight).observe(bar);
   window.addEventListener('load', syncBarHeight);

@@ -20,31 +20,33 @@
   <script src="/assets/campaign.js" defer></script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="header-inner">
-      <div class="brand" aria-label="Movidos por amor">
+  <header class="nav site-header">
+    <div class="nav-inner header-inner">
+      <div class="nav-logo brand" aria-label="Movidos por amor">
         <svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#24ca68"/><path d="M16 24s-9-5.8-9-11a4.7 4.7 0 0 1 9-1.7A4.7 4.7 0 0 1 25 13c0 5.2-9 11-9 11Z" fill="white"/></svg>
         <span>Movidos<br>por amor</span>
       </div>
       <span class="header-label">Campanha solidária</span>
     </div>
   </header>
-  <main id="inicio">
-    <div class="campaign-photo">
+  <div class="spacer" aria-hidden="true"></div>
+  <main id="inicio" class="container">
+    <div class="campaign-image campaign-photo">
       <img src="/assets/campaigns/lia.jpg" alt="Fotografia enviada pela família para a campanha de Lia." width="636" height="1280" fetchpriority="high">
-      <button class="favorite" type="button" data-favorite aria-label="Favoritar esta campanha" aria-pressed="false">
+      <button class="heart-btn favorite" type="button" data-favorite aria-label="Favoritar esta campanha" aria-pressed="false">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 20-1.3-1.2C6.1 14.7 3 11.9 3 8.5A5 5 0 0 1 12 5.4a5 5 0 0 1 9 3.1c0 3.4-3.1 6.2-7.7 10.3Z"/></svg>
       </button>
     </div>
-    <p class="eyebrow">Saúde · Campanha de Lia</p>
-    <h1>Um diagnóstico raro mudou nossa rotina, mas a nossa esperança é maior que tudo!</h1>
+    <div class="tags-row"><span>Movidos por amor / Saúde</span></div>
+    <h1 class="campaign-title">Um diagnóstico raro mudou nossa rotina, mas a nossa esperança é maior que tudo!</h1>
+    <p class="campaign-id">Campanha de Lia</p>
     <p class="privacy-note">Lia é um nome fictício utilizado nesta página para preservar a identidade da criança.</p>
-    <div class="intro">
+    <div class="short-desc intro">
       <p>Um diagnóstico raro mudou a rotina da nossa menina. Sua ajuda pode apoiar os cuidados de que ela precisa.</p>
-      <a href="#sobre">Conheça a história</a>
+      <a href="#sobre">ver tudo</a>
     </div>
-    <nav class="section-nav" aria-label="Seção desta campanha"><a href="#sobre" aria-current="location">Sobre a campanha</a></nav>
-    <section id="sobre" class="story" aria-labelledby="story-title">
+    <nav class="tabs-wrap section-nav" aria-label="Seções desta campanha"><a class="tab active" href="#sobre">Sobre</a><a class="tab" href="#como-ajudar">Como ajudar</a></nav>
+    <section id="sobre" class="description story" aria-labelledby="story-title">
       <p class="section-kicker">Relato da família</p>
       <h2 id="story-title">Uma corrente de apoio para Lia</h2>
       <p>Descobrir que nossa menina tem uma doença rara foi um choque que parou o nosso mundo. Desde então, nossa rotina virou uma maratona de especialistas, terapias específicas e tratamentos de alto custo que são fundamentais para garantir a qualidade de vida dela.</p>
@@ -53,21 +55,27 @@
 <p>Quando nos unimos, podemos construir uma rede de apoio. Agradeço a cada pessoa que decidir estender a mão para a nossa pequena. Que Deus abençoe grandemente a sua vida! 🙏❤️</p>
       <p><strong>Você pode ajudar contribuindo com a campanha ou compartilhando este pedido com amigos e familiares.</strong></p>
     </section>
-    <section class="help-card" aria-labelledby="help-title">
+    <section id="como-ajudar" class="description help-section" aria-labelledby="help-title">
       <h2 id="help-title">Como sua ajuda pode apoiar</h2>
       <p>Medicamentos, terapias específicas e acompanhamento médico especializado, conforme o relato da família.</p>
       <p><strong>Cada gesto de solidariedade conta.</strong> Se não puder doar, você também pode ajudar compartilhando este link.</p>
       <button class="inline-share" type="button" data-share>Compartilhar esta campanha</button>
     </section>
-    <footer class="footer">
+    <footer class="aviso footer">
       <p><strong>Movidos por amor</strong> · Apoio que aproxima.</p>
       <p>História e fotografia fornecidas pelo organizador da campanha. Nome alterado para preservar a identidade da criança.</p>
+      <p>Página independente, sem vínculo com a plataforma Vakinha.</p>
     </footer>
   </main>
-  <aside class="action-bar" aria-label="Apoiar a campanha de Lia">
+  <aside class="mobile-bottom action-bar" aria-label="Apoiar a campanha de Lia">
+    <div class="mb-protected">
+      <div class="mb-protected-badge">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21l-1.5-1.4C5.2 14.9 2 12 2 8.5A5.5 5.5 0 0 1 12 5a5.5 5.5 0 0 1 10 3.5c0 3.5-3.2 6.4-8.5 11.1Z"/></svg>
+        <span>Juntos por Lia</span>
+      </div>
+    </div>
     <div class="action-inner">
-      <p class="action-title">Juntos, podemos apoiar Lia.</p>
-      <div class="action-buttons">
+      <div class="mb-btns action-buttons">
         <button class="btn btn-donate" type="button" disabled aria-describedby="donation-status">Quero ajudar</button>
         <button class="btn btn-share" type="button" data-share>Compartilhar</button>
       </div>

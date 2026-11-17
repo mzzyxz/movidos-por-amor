@@ -29,3 +29,7 @@ A campanha original permanece em `/`. As duas páginas adicionais ficam em `/cam
 As novas páginas e imagens recebem a diretiva `X-Robots-Tag: noindex`; as páginas também incluem a meta tag de não indexação. Isso orienta buscadores; não é autenticação. Quem conhece a URL pode acessá-la, e os caminhos também estão no código deste repositório público.
 
 Os botões de doação das novas páginas aguardam os respectivos links do organizador. Para ativar uma campanha, substitua o botão desabilitado `.btn-donate` por um link com o endereço de doação correspondente e atualize a mensagem `#donation-status`. Não reutilize automaticamente o checkout da campanha original. Favoritos são locais e separados por campanha; compartilhamento usa a URL da página atual.
+
+### Aparência das campanhas adicionais
+
+As páginas adicionais usam os mesmos estilos e medidas da página original: fonte Lato, títulos, peso dos parágrafos, cores, largura de leitura, fotos e barra fixa. O cabeçalho mantém a identificação Movidos por Amor e o rodapé informa que as páginas são independentes da plataforma Vakinha. A faixa de apoio não declara proteção de pagamento, e as novas páginas não exibem valores ou contagens inventados.
