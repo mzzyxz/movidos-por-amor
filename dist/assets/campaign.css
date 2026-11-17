@@ -589,3 +589,14 @@ h1.campaign-title { text-transform: uppercase; }
 @media (max-width: 380px) { .nav-logo.brand { font-size: 12px; width: 106px; } .header-label { font-size: 9px; } }
 @media (max-height: 500px) and (orientation: landscape) { .donation-status { display: none; } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* Clearly marked, non-transactional layout demonstrations. */
+.simulation-banner { position: sticky; top: calc(var(--nav-h) + env(safe-area-inset-top, 0px)); z-index: 190; background: #fff0b3; color: #56420b; padding: 9px 16px; text-align: center; font-size: 12px; line-height: 1.4; border-bottom: 1px solid #e9d486; }
+.simulation-banner strong, .simulation-banner span { display: block; }
+.simulation-banner strong { font-weight: 900; letter-spacing: .04em; }
+.demo-label { color: #715600; background: #fff0b3; border: 1px solid #e9d486; border-radius: 4px; padding: 4px 7px; font-weight: 900; }
+.stats-notice { color: #715600; font-size: 12px; font-weight: 700; margin: 0 0 10px; }
+.tabs-wrap button.tab { background: transparent; border: 0; border-bottom: 2px solid transparent; cursor: default; font-family: inherit; opacity: 1; }
+html { scroll-padding-top: 125px; }
+
+.demo-stats { font-weight: 900; }
